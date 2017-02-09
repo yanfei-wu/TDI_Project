@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>User Input</title>
+		<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style.css')}}'>
+	</head>
+	<body>
+		<div>
+  		<h1>User Input</h1>
+		</div>
+		   <h4>Please enter a stock ticker (e.g., AAPL for Apple, GOOG for google, etc.), and check the desired features.</h4>
+   <div>
+    <form id='input_form' method='post' action='plot_page' >
+	    <p>
+        Ticker symbol: <input type='text' name='ticker' /> </p>
+	    <p>
+		    <input type='checkbox' name='feature' value='cp' /> Close Price </p>
+	    <p>
+		    <input type='checkbox' name='feature' value='acp' /> Adjusted Close Price </p>
+	    <p>
+		    <input type='checkbox' name='feature' value='op' /> Open Price </p>
+	    <p>
+		    <input type='checkbox' name='feature' value='aop' /> Adjusted Open Price </p>
+	    <p>
+        <input type='submit' value='Submit' /> </p>
+    </form>
+	</div>
+ </body>
+</html>
